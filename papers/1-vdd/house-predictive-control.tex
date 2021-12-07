@@ -1,0 +1,97 @@
+% additional options: [seceqn,secthm,crcready]
+\documentclass[ais]{iosart2x}
+
+%% Packages
+\usepackage{dcolumn}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+
+%% Definitions
+\newcolumntype{d}[1]{D{.}{.}{#1}}
+
+%% Article Info
+\firstpage{1}
+\lastpage{1}
+\volume{1}
+\pubyear{2022}
+
+\begin{document}
+\begin{frontmatter}
+
+%
+%\pretitle{Pretitle}
+\title{Ambient Intelligence: House predictive control based upon the user actions}
+
+\runtitle{Ambient Intelligence: House predictive control based upon the user actions}
+%\subtitle{Subtitle}
+
+\begin{aug}
+\author[A]{\inits{PP.}\fnms{Peter} \snm{Patočka}\ead[label=e1]{patocka.peter@gmail.com}}
+\author[B]{\inits{VJ.}\fnms{Vladimír} \snm{Janoušek}\ead[label=e2]{janousek@fit.vutbr.cz }}
+\address[A]{Department of Intelligent Systems, \orgname{Brno University of Technology}, \cny{Czech~Republic}}
+\end{aug}
+
+\begin{abstract}
+Ambient Intelligence is in the real world represented by a multi-agent system where various intelligent agents
+are taking actions to fulfill their goals and integrate them into common, more complex objectives.
+Users usually interact with the system directly, but how to design the architecture of the system which
+autonomously predicts users' needs?
+Users could be owners of the system who have control over the mechanisms or simple visitors with passive
+participation, but their presence is considered and taken into account either way.
+One of the biggest challenges in the field is detection of human presence and human verification.
+Multiple sorts of sensors should be used to determine the exact position and state of the user.
+Ontologies help us to differentiate between users and categorize them.
+Then data should be stored into the distributed, time series database by using stream processing systems,
+where they are systematically extracted.
+Big Data as the fuel for Artificial Intelligence analyzes users actions, tries to predict their next steps
+and create automated rules or triggers to minimize user interactions with the systems.
+In this paper I construct an overview of the system as such and explain a specific approach to predict
+users' future steps by using formalism for modeling and analysis of discrete event systems (DEVS).
+\end{abstract}
+
+\begin{keyword}
+\kwd{Ambient intelligence}
+\kwd{artificial intelligence}
+\kwd{multi-agent system}
+\kwd{human presence detection}
+\kwd{user action prediction}
+\kwd{intelligent agents}
+\kwd{internet of things}
+\kwd{big data}
+\kwd{discrete event system specification}
+\end{keyword}
+\end{frontmatter}
+
+\section{Introduction}
+
+Ambient intelligence (AmI) is intrinsically and thoroughly connected with artificial intelligence (AI).
+Some even say that it is, in essence, AI in the environment~\cite{1}.
+
+\begin{thebibliography}{0}
+
+\bibitem{1} Matjaz Gams, Irene Yu-Hua Gu, Aki Härmä, Andrés Muñoz and Vincent Tam,
+{Artificial intelligence and ambient intelligence},
+{\textit{Journal of Ambient Intelligence and Smart Environments}} \textbf{11}(1) (2019), 71-86. ISSN 18761372. \bid{doi={10.3233/AIS-180508}}
+
+\bibitem{2} M. Raval, S. Bhardwaj, A. Aravelli, J. Dofe, and H. Gohel,
+{Smart energy optimization for massive IoT using artificial intelligence},
+{\textit{Internet of Things}} \textbf{13}(1) (2021), p. 12. ISSN 25426605. \bid{doi={10.1016/j.iot.2020.100354}}
+
+\bibitem{3} S. J. Russell and P. Norvig,
+\textit{Artificial intelligence: a modern approach}, 3rd ed. Harlow: Pearson Education, 2014.
+
+\bibitem{4} A. Pérez-vereda, D. Flores-martín, C. Canal, and J. M. Murillo,
+{Towards Dynamically Programmable Devices Using Beacons},
+in {\textit{Current Trends in Web Engineering}} (2018), vol. 11153, pp. 49-58. ISBN: 9783030030551. ISSN: 0302-9743. \bid{doi={10.1007/978-3-030-03056-8_5}}
+
+\bibitem{5}  Streitz, Norbert,
+{Beyond ‘smart-only’ cities: redefining the ‘smart-everything’ paradigm},
+{\textit{Journal of ambient intelligence and humanized computing}} [online] \textbf{10}(2) (2012), 791-812. ISSN 1868-5137. \bid{doi={10.1007/s12652-018-0824-1}}
+
+\bibitem{6} A. Kapoor,
+\textit{Hands-on artificial intelligence for IoT: expert machine learning and deep learning techniques for developing smarter IoT systems}. Birmingham: Packt Publishing, 2019.
+
+\end{thebibliography}
+
+
+\end{document}

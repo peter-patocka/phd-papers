@@ -22,3 +22,11 @@
 
 ## File-based project format:
 *.iws
+
+## pdflatex temporary files
+out/
+*.log
+*.aux
+*.out
+*.synctex.gz
+papers/**/*.pdf
