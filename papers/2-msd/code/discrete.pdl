@@ -1,0 +1,20 @@
+Atomic
+    {
+    Name = Ping Player
+    Ports = 1 ; 1
+    Path = discrete\ping_player.h
+    Description = Ping Player
+    Graphic
+        {
+        Position = 1710 ; 630
+        Dimension = 680 ; 680
+        Direction = Right
+        Color = 15
+        Icon = %discrete%ping-pong.svg
+        }
+    Parameters
+        {
+        name = Str; 0 ; Player name
+        speed = Val; 1 ; Player speed in ms
+        }
+    }
