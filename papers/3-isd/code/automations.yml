@@ -1,0 +1,13 @@
+automation:
+  - alias: "Turn on the hall light on movement"
+    trigger:
+      - platform: state
+        entity_id: sensor.hall_motion_sensor
+        to: "on"
+    condition: numeric_state
+                 - entity_id: sensor.hall_lux_sensor
+                 below: 10
+    action:
+      - service: light.turn_on
+        target:
+          entity_id: light.hall
