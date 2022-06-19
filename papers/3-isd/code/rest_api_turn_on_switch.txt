@@ -1,0 +1,4 @@
+curl -X POST -H "Authorization: Bearer TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{"entity_id": " switch.wall_switch"}' \
+  http://localhost:8123/api/services/ homeassistant/turn_on
